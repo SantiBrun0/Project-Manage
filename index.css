@@ -208,7 +208,7 @@ header {
 .cajaCards {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     height: 50vh;
 }
@@ -231,7 +231,7 @@ header {
 }
 
 .textoCard {
-    width: 400px;
+    width: 330px;
     height: 80px;
     color: #B9B9C1;
     font-size: 1rem;
@@ -380,7 +380,7 @@ footer {
 
 
 
-@media (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 768px) {
 
     body {
         background-position: 130px -350px;
@@ -404,7 +404,7 @@ footer {
     header {
         display: flex;
         justify-content: space-between;
-        width: 375px;
+        width: 100%;
     }
 
     .logoHeader {
@@ -422,7 +422,7 @@ footer {
         align-items: center;
         justify-content: space-evenly;
         height: 870px;
-        width: 375px;
+        width: 100%;
     }
 
     .cajaTituloPrimero {
@@ -455,8 +455,9 @@ footer {
 
     .contenedorSegundo {
         flex-direction: column;
+        align-items: center;
         height: 1200px;
-        width: 375px;
+        width: 100%;
     }
 
     .cajaTituloSegundo {
@@ -606,6 +607,298 @@ footer {
         color: #b7b7b7;
     }
 }
+
+
+/* ********************* HOJA DE ESTILOS PARA 1024p ********************* */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .contenedorPrimero {
+        height: 75vh;
+    }
+
+    .cajaTituloPrimero {
+        width: 440px;
+    }
+
+    .cajaTituloPrimero h2 {
+        font-size: 3rem;
+        width: 440px;
+    }
+
+    .grafico img {
+        width: 440px;
+    }
+
+    .cajaTituloSegundo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaTituloSegundo .claseTitulo, .cajaTituloSegundo p {
+        width: 280px;
+    }
+
+    .textoItem {
+        width: 330px;
+    }
+
+    .card {
+        width: 310px;
+        padding-bottom: 30px;
+    }
+
+    .textoCard {
+        width: 280px;
+    }
+
+}
+
+
+
+/* ********************* HOJA DE ESTILOS PARA 320p ********************* */
+
+
+
+@media (min-width: 1px) and (max-width: 374px) {
+
+    body {
+        background-position: 130px -350px;
+    }
+
+    main {
+        background-position: 180px 220px;
+    }
+
+/* ------------------------------ HEADER ------------------------------ */
+
+
+    .menuHambur {
+        display: flex;
+    }
+
+    .barraNav, header .botonGetStarted {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logoHeader {
+        margin-left: 40px;
+    }
+
+    .menuHambur {
+        margin-right: 40px;
+    }
+
+/* ------------------------------ MAIN ------------------------------ */
+
+    .contenedorPrimero {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 870px;
+        width: 100%;
+    }
+
+    .cajaTituloPrimero {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaTituloPrimero h2 {
+        width: 320px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .cajaTituloPrimero p {
+        width: 320px;
+        color: #B3B2B7;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .grafico img{
+        width: 320px;
+    }
+
+/* ........................................ */
+
+
+    .contenedorSegundo {
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+        width: 100%;
+    }
+
+    .cajaTituloSegundo {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cajaTituloSegundo .claseTitulo, .cajaTituloSegundo p {
+        width: 320px;
+        text-align: center;
+    }
+
+    .cajaTituloSegundo p {
+        color: #B3B2B7;
+        line-height: 30px;
+    }
+
+    .cajaItems {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item, .textoItem {
+        width: 320px;
+        margin-left: 0px;
+    }
+
+    .textoItem {
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .item .vinieta {
+        text-align: center;
+    }
+
+    .item p {
+        margin-left: 5px;
+        width: 320px;
+    }
+
+    .item {
+        width: 320px;
+        padding-left: 20px;
+        background-color: #fce2d492;
+    }
+
+/* ........................................ */
+
+
+    .contenedorTercero {
+        flex-direction: column;
+        height: 500px;
+        margin: 80px 0px;
+    }
+
+    .cajaCards {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .contenedorTercero .claseTitulo {
+        margin-bottom: 100px;
+    }
+
+    .card1, .claseTitulo, .textoCard {
+        width: 320px;
+        text-align: center;
+    }
+
+    .claseTitulo {
+        font-size: 30px;
+    }
+
+    .textoCard {
+        width: 90%;
+    }
+
+    .card2, .card3 {
+        display: none;
+    }
+
+    .contenedorTercero i {
+        display: flex;
+        color: #F3603B;
+        margin-bottom: 50px;
+    }
+
+/* ------------------------------ PRE FOOTER ------------------------------ */
+
+
+    .preFooter {
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloPreFooter {
+        min-width: 290px;
+        width: 290px;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .preFooter .botonGetStarted {
+        margin: 20px 0px;
+    }
+
+
+/* ------------------------------ FOOTER ------------------------------ */
+
+
+    footer {
+        height: 520px;
+        flex-direction: column-reverse;
+    }
+
+    .cajaIzquierdaFooter {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cajaIconosRedes i {
+        margin: 0px 15px;
+    }
+
+    .cajaCentralFooter ol {
+        height: 180px;
+    }
+
+    .cajaDerechaFooter {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .derechosReservados p {
+        visibility: hidden;
+    }
+
+    .derechosReservadosMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        background-color: #1E1E26;
+        color: #b7b7b7;
+    }
+}
+
 
 
 /*
